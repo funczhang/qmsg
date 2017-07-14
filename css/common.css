@@ -1,0 +1,60 @@
+html,
+body {
+    height: 100%;
+    background: #f1f1f7;
+}
+a{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	outline: none;
+}
+.module{
+	margin:1rem 0;
+}
+.module h3 {
+    padding: 0.6rem 0;
+    border-top:1px solid #f4f4f4;
+    border-bottom:1px solid #f4f4f4;
+    background:#fff;
+}
+.f05{
+	color:#ff0055;
+}
+.title span {
+    display: inline-block;
+    border-left: 5px solid #ff0055;
+    font: bold 0.75rem/0.75rem "微软雅黑";
+    color: #000;
+    text-indent: 10px;
+}
+.btn-normal{
+	display: block;
+	margin:1rem auto;
+	padding:0.5rem 0;
+	width:90%;
+	height:1.5rem;
+	text-align: center;
+	font:normal 0.8rem/1.5rem "微软雅黑";
+	color:#fff;
+	background:#ff0055;
+	border-radius: 8px;
+}
+.icon-error{
+	margin:1.5rem auto;
+	width:6rem;
+	height:6rem;
+	background:url(../imgs/icon-error.png) no-repeat center;
+	background-size:6rem 6rem;
+}
+.hide{
+	display: none;
+}
+.btn-small{
+	float:right;
+	width:2rem;
+	height:1rem;
+	border:2px solid #ff0055;
+	text-align: center;
+	line-height: 1rem;
+	color:#ff0055;
+	border-radius: 5px;
+}

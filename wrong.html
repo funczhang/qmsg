@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我爆的料</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="js/scale.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+    .tip {
+        font: bold 0.75rem/1.5rem "微软雅黑";
+        text-align: center;
+    }
+    
+    .btn-baoliao {
+        width: 80%;
+        margin: 2rem auto;
+    }
+    
+    .bl-panel li {
+        margin: 1rem auto;
+    }
+    
+    .bl-content {
+        padding: 0.5rem 1rem 0.5rem 3.5rem;
+        background: url(imgs/icon-list.png) no-repeat 1rem;
+        background-size: 2.125rem 2.125rem;
+        background-color: #fff;
+    }
+    
+    .bl-content h3 {
+        font: bold 0.75rem/1rem "微软雅黑";
+        color: #000;
+    }
+    
+    .bl-content p {
+        font: normal 0.625rem/1rem "微软雅黑";
+        color: #999;
+    }
+    
+    .bl-bar {
+        padding: 0.5rem 1rem;
+        border-top: 1px solid #eaeaea;
+        border-bottom: 1px solid #eaeaea;
+        font-size: 0.75rem;
+        font-family: "微软雅黑";
+        background: #fff;
+    }
+    
+    .bl-bar a {
+        color: #ff0055;
+    }
+    
+    .btn-rechange,
+    .btn-evaluation {
+        float: right;
+    }
+    
+    .btn-rechange {
+        margin-right: 1rem;
+        padding-left: 0.9rem;
+        background: url(imgs/icon-msg.png) no-repeat left;
+        background-size: 0.725rem 0.6rem;
+    }
+    
+    .btn-evaluation {
+        padding-left: 0.9rem;
+        background: url(imgs/icon-write.png) no-repeat left;
+        background-size: 0.65rem 0.65rem;
+    }
+    .btn-detail{
+    	position: relative;
+    	z-index: 10;
+    	display: block;
+    	background:url(imgs/arrow.png) no-repeat 5rem;
+    	background-size:0.375rem 0.75rem;
+    }
+     .btn-detail:after{
+
+     }
+    </style>
+</head>
+
+<body>
+    <!-- 没有爆料页面 -->
+    <div class="wrong-panel hide">
+        <div class="icon-error">
+        </div>
+        <div class="tip">
+            您暂未爆过料，请您点击下面的按钮开始爆料吧！
+        </div>
+        <a href="javascript:void(null)" class="btn-normal btn-baoliao">我要爆料</a>
+    </div>
+    <!-- 历史爆料列表 -->
+    <div class="bl-panel">
+        <ul>
+            <li>
+                <a class="btn-detail" href="javascript:void(null)">
+                    <div class="bl-content">
+                        <h3 class="ell">爆料标题爆料标题爆料标题爆料标题爆料标爆料标题爆料标题爆料标题爆料标题爆料标</h3>
+                        <p><span>爆料日期：</span>2017.12.12</p>
+                        <p><span>爆料人：</span>阿里巴巴</p>
+                        <p class="f05">正在办理</p>
+                    </div>
+                </a>
+                <div class="bl-bar fix">
+                    <a href="javascript:void(null)" class="btn-evaluation">评价</a>
+                    <a href="javascript:void(null)" class="btn-rechange">重新修改</a>
+                </div>
+            </li>
+            <li>
+                <div class="bl-content">
+                    <h3 class="ell">爆料标题爆料标题爆料标题爆料标题爆料标爆料标题爆料标题爆料标题爆料标题爆料标</h3>
+                    <p><span>爆料日期：</span>2017.12.12</p>
+                    <p><span>爆料人：</span>阿里巴巴</p>
+                    <p class="f05">正在办理</p>
+                </div>
+                <div class="bl-bar fix">
+                    <a href="javascript:void(null)" class="btn-evaluation">评价</a>
+                    <a href="javascript:void(null)" class="btn-rechange">重新修改</a>
+                </div>
+            </li>
+            <li>
+                <div class="bl-content">
+                    <h3 class="ell">爆料标题爆料标题爆料标题爆料标题爆料标爆料标题爆料标题爆料标题爆料标题爆料标</h3>
+                    <p><span>爆料日期：</span>2017.12.12</p>
+                    <p><span>爆料人：</span>阿里巴巴</p>
+                    <p class="f05">正在办理</p>
+                </div>
+                <div class="bl-bar fix">
+                    <a href="javascript:void(null)" class="btn-evaluation">评价</a>
+                    <a href="javascript:void(null)" class="btn-rechange">重新修改</a>
+                </div>
+            </li>
+            <li>
+                <div class="bl-content">
+                    <h3 class="ell">爆料标题爆料标题爆料标题爆料标题爆料标爆料标题爆料标题爆料标题爆料标题爆料标</h3>
+                    <p><span>爆料日期：</span>2017.12.12</p>
+                    <p><span>爆料人：</span>阿里巴巴</p>
+                    <p class="f05">正在办理</p>
+                </div>
+                <div class="bl-bar fix">
+                    <a href="javascript:void(null)" class="btn-evaluation">评价</a>
+                    <a href="javascript:void(null)" class="btn-rechange">重新修改</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>我要爆料</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/scale.js"></script>
+    <style>
+    .bl-content,
+    .pic-panel,
+    .other-info {
+        padding: 0.5rem;
+        background: #fff;
+    }
+    
+    .other-info {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    .bl-content textarea {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        resize: none;
+        border: none;
+    }
+    
+    .pic-panel ul li {
+    	position: relative;
+        float: left;
+        margin-right: 0.5rem;
+        padding-top:3rem;
+        width: 5rem;
+        height: 2rem;
+        border: 1px dotted #ccc;
+        border-radius: 8px;
+        background:url(imgs/icon-add.png) no-repeat;
+        background-position: 1.75rem 1rem;
+        background-size:1.5rem 1.5rem;
+    }
+    .pic-panel li span{
+    	display: block;
+		font:normal 0.75rem/2rem "微软雅黑";
+		text-align: center;
+    }
+    .tip {
+        padding: 0.5rem;
+        font: normal 0.65rem/1rem "微软雅黑";
+        background: #fff;
+        color: #ff0055;
+    }
+    
+    .other-info li {
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #f4f4f4;
+    }
+    
+    .other-info label,
+    .other-info li input {
+        float: left;
+    }
+    
+    .other-info label {
+        width: 25%;
+        height: 100%;
+        color: #000;
+        font-size: 0.75rem;
+        font-weight: bold;
+        font-family: "微软雅黑";
+    }
+    
+    .other-info input {
+        padding-right: 0.5rem;
+        width: 70%;
+        height: 100%;
+        background: url(imgs/arrow.png) no-repeat right;
+        background-size: 0.375rem 0.75rem;
+        font-size: 0.75rem;
+        /*line-height: 0.75rem;*/
+        font-family: "微软雅黑";
+    }
+    .other-info input[type=tel]{
+    	background:none;
+    }
+    .mui-popup-title+.mui-popup-text {
+    	text-align: left;
+    }
+    .mui-popup-title{
+    	color:#ff0055;
+    }
+    .mui-popup-button:first-child:last-child{
+    	color:#ff0055;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="module">
+        <h3 class="title"><span>问题描述</span></h3>
+        <!-- 爆料内容 -->
+        <div class="bl-content">
+            <textarea name="" id="" maxlength="500" rows="8" placeholder="请清晰描述问题发生问题与发生位置"></textarea>
+        </div>
+    </div>
+    <div class="module">
+        <h3 class="title"><span>问题照片</span></h3>
+        <!-- 照片 -->
+        <div class="pic-panel">
+            <ul class="fix">
+                <li>
+                	<span>上传照片</span>
+                </li>
+            </ul>
+        </div>
+        <div class="tip">请上传事件+地标志性参照物相关的照片</div>
+    </div>
+    <div class="module">
+        <h3 class="title"><span>其他信息</span></h3>
+        <!-- 其他信息 -->
+        <div class="other-info">
+            <ul>
+                <li class="fix">
+                    <label>事发位置</label>
+                    <input class="get-loc" type="text" value="" maxlength="50" placeholder="点击选择事发所在地位置">
+                </li>
+                <li class="fix">
+                    <label for="">问题分类</label>
+                    <input type="text" value="" maxlength="50" placeholder="请选择">
+                </li>
+                <li class="fix">
+                    <label for="">联系电话</label>
+                    <input type="tel" value="" maxlength="11" placeholder="方便遇到问题联系（非必填）">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <a href="javascript:void(null)" class="btn-normal btn-submit">提交</a>
+</body>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/mui.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	var msg = "1，xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>2，aaaaaaaaaaaaaaaaaaaaaaaaaaa<br>3，bbbbbbbbbbbbbbbbbbbbbb<br>4，yyyyyyyyyyyyyyyyyyyyyy";
+    $(document).on('click', '.btn-submit', function() {
+       mui.alert(msg,'title',['我知道了'],function(){
+       		console.log('我知道了');
+       });
+    });
+    $(document).on('focus','.get-loc',function(){
+        debugger
+    });
+})
+</script>
+
+</html>
