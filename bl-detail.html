@@ -13,18 +13,18 @@
     body {
         position: relative;
     }
-    
+
     .container {
         position: relative;
         padding: 0.1px;
     }
-    
+
     .navbar {
         position: fixed;
         left: 0;
         right: 0;
     }
-    
+
     .navbar div {
         position: absolute;
         padding: 0.7rem 0;
@@ -34,45 +34,45 @@
         text-align: center;
         border: 1px solid #dbdbdb;
     }
-    
+
     .nav-schedule {
         left: 0;
         right: 50%;
         border-left: none;
     }
-    
+
     .nav-detail {
         left: 50%;
         right: 0;
         border-left: none;
         border-right: none;
     }
-    
+
     .navbar .active {
         color: #ff0055;
         border-bottom: 1px solid #ff0055;
     }
-    
+
     .schedule-panel,
     .detail-panel {
         margin-top: 2.5rem;
     }
-    
+
     .detail-panel {
         padding: 0.5rem 1rem;
         background: #fff;
         font-size: 0.75rem;
         line-height: 1.2rem;
     }
-    
+
     .bl-detail {
         margin: 1rem auto;
     }
-    
+
     .bl-pic {
         padding: 0.5rem 0;
     }
-    
+
     .bl-pic li {
         float: left;
         margin: 0.5rem 0.5rem 0.5rem 0;
@@ -81,57 +81,86 @@
         border-radius: 8px;
         overflow: hidden;
     }
-    
+
     .bl-pic li img {
         width: 100%;
         height: 100%;
     }
-    
+
     .info-panel {
         padding: 1rem;
-        width: 100%;
+        /*width: 100%;*/
         height: 4rem;
         background: url(imgs/pic-head.png) no-repeat center;
         background-size: 100% 100%;
         background-color: #fff;
     }
-    
+
     .info-panel p {
         font: bold 0.65rem/1rem "微软雅黑";
         color: #fff;
     }
-    
+
     .schedule-panel ul {
         background: #fff;
     }
-    
+
     .schedule-panel li {
-        padding: 1.5rem 1rem 0.5rem 2rem;
-        height: 2.5rem;
-        background: url(imgs/line.png) no-repeat 1.45rem;
-        background-size: 9px 100%;
+        padding-left: 0.8rem;
+        position: relative;
+        margin-left: 1.5rem;
+        border-left: 1px solid #dcdcdc;
     }
-    
-    .schedule-panel .schedule-active {
-        background: url(imgs/line-active.png) no-repeat 1.45rem;
-        background-size: 9px 100%;
+
+    .blank {
+        height: 1.5rem;
+        background: #fff;
     }
-    
-    .bs-title {
-        font-size: 0.75rem;
-        font-weight: bold;
-        line-height: 1.5rem;
+
+    .blank div {
+        margin-left: 1.5rem;
+        height: 1.5rem;
+        border-left: 1px solid #ff0055;
     }
-    
-    .bs-time,
-    .bs-jingdu {
-        font-size: 0.65rem;
-        line-height: 1rem;
-        color: #dcdcdc;
+
+    .dot {
+        display: block;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: -6px;
     }
-    
-    .btn-modify {
+
+    .bl-title {
+        position: relative;
+        top: -10px;
+        padding-right:1rem;
+        /*right:2rem;*/
+        font: bold 0.8rem/1.5rem "微软雅黑";
+        color: #000;
+    }
+
+    .bl-time,
+    .bl-handler {
+        position: relative;
+        top: -8px;
+        font: normal 0.65rem/1rem "微软雅黑";
+        color: #999;
+    }
+
+    .btn-modify,.btn-judge {
+        float:right;
+        /*margin-right: 1rem;*/
         margin-top: 3px;
+        vertical-align: middle;
+    }
+
+    .schedule-list .list-active {
+        border-left: 1px solid #ff0055;
+    }
+    .selected-dot{
+        width:12px;
+        height:12px;
     }
     </style>
 </head>
@@ -148,28 +177,51 @@
                 <p>爆料日期：xxxx xx xx</p>
                 <p>爆料人：xxxxxx</p>
             </div>
-            <ul>
-                <li class="schedule-active">
-                    <p class="bs-title ell">亲，您的爆料已传送成功！<a class="btn-small btn-modify" href="javascript:void(null)">修改</a></p>
-                    <p class="bs-time">2016-09-21 15：24:34</p>
+            <div class="blank">
+                <div class="line"></div>
+            </div>
+            <ul class="schedule-list">
+                <li class="list-active">
+                    <img class="dot" src="imgs/red-dot.png">
+                    <!-- <img class="dot" src="imgs/grey-dot.png"> -->
+                    <p class="bl-title">请xxxxxxxxxxxx<a class="btn-small btn-modify" href="javascript:void(null)">修改</a> </p>
+                    <p class="bl-time">2016-12-12</p>
+                    <p class="bl-handler">xxxxxxxxxxxx</p>
                 </li>
-                <li class="schedule-active">
-                    <p class="bs-title ell">亲，您的爆料已传送成功！<a class="btn-small btn-modify" href="javascript:void(null)">修改</a></p>
-                    <p class="bs-time">2016-09-21 15：24:34</p>
+                <li class="list-active">
+                    <img class="dot" src="imgs/red-dot.png">
+                    <!-- <img class="dot" src="imgs/grey-dot.png"> -->
+                    <p class="bl-title">请xxxxxxxxxxxx<a class="btn-small btn-modify" href="javascript:void(null)">修改</a> </p>
+                    <p class="bl-time">2016-12-12</p>
+                    <p class="bl-handler">xxxxxxxxxxxx</p>
                 </li>
                 <li>
-                    <p class="bs-title ell">亲，您的爆料已传送成功！<a class="btn-small btn-modify" href="javascript:void(null)">修改</a></p>
-                    <p class="bs-time">2016-09-21 15：24:34</p>
-                    <p class="bs-jingdu">经过现场核查，您上报的问题确实 存在，经过处理已完成！经过现场核查，您上报的问题确实 存在
-                    </p>
+                    <!-- <img class="dot" src="imgs/red-dot.png"> -->
+                    <!-- <img class="dot" src="imgs/grey-dot.png"> -->
+                    <img class="dot selected-dot" src="imgs/selected-dot.png">
+                    <p class="bl-title">请xxxxxxxxxxxx<a class="btn-small btn-judge" href="javascript:void(null)">评价</a> </p>
+                    <p class="bl-time">2016-12-12</p>
+                    <p class="bl-handler">xxxxxxxxxxxx</p>
                 </li>
                 <li>
-                    <p class="bs-title ell">亲，您的爆料已传送成功！<a class="btn-small btn-modify" href="javascript:void(null)">修改</a></p>
-                    <p class="bs-time">2016-09-21 15：24:34</p>
+                    <!-- <img class="dot" src="imgs/red-dot.png"> -->
+                    <img class="dot" src="imgs/grey-dot.png">
+                    <p class="bl-title">请xxxxxxxxxxxx<a class="btn-small btn-judge" href="javascript:void(null)">评价</a> </p>
+                    <p class="bl-time">2016-12-12</p>
+                    <p class="bl-handler">xxxxxxxxxxxx</p>
                 </li>
                 <li>
-                    <p class="bs-title ell">亲，您的爆料已传送成功！<a class="btn-small btn-modify" href="javascript:void(null)">修改</a></p>
-                    <p class="bs-time">2016-09-21 15：24:34</p>
+                    <!-- <img class="dot" src="imgs/red-dot.png"> -->
+                    <img class="dot" src="imgs/grey-dot.png">
+                    <p class="bl-title">请xxxxxxxxxxxx<a class="btn-small btn-judge" href="javascript:void(null)">评价</a> </p>
+                    <p class="bl-time">2016-12-12</p>
+                    <p class="bl-handler">xxxxxxxxxxxx</p>
+                </li>
+                <li>
+                    <!-- <img class="dot" src="imgs/red-dot.png"> -->
+                    <img class="dot" src="imgs/grey-dot.png">
+                    <p class="bl-title">感谢您对全民社管的信任和支持</p>
+                    <p class="bl-time">2016-12-12</p>
                 </li>
             </ul>
         </div>
