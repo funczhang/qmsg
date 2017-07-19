@@ -13,33 +13,33 @@
         font: bold 0.75rem/1.5rem "微软雅黑";
         text-align: center;
     }
-    
+
     .btn-baoliao {
         width: 80%;
         margin: 2rem auto;
     }
-    
+
     .bl-panel li {
         margin: 1rem auto;
     }
-    
+
     .bl-content {
         padding: 0.5rem 1rem 0.5rem 3.5rem;
         background: url(imgs/icon-list.png) no-repeat 1rem;
         background-size: 2.125rem 2.125rem;
         background-color: #fff;
     }
-    
+
     .bl-content h3 {
         font: bold 0.75rem/1rem "微软雅黑";
         color: #000;
     }
-    
+
     .bl-content p {
         font: normal 0.625rem/1rem "微软雅黑";
         color: #999;
     }
-    
+
     .bl-bar {
         padding: 0.5rem 1rem;
         border-top: 1px solid #eaeaea;
@@ -48,38 +48,54 @@
         font-family: "微软雅黑";
         background: #fff;
     }
-    
+
     .bl-bar a {
         color: #ff0055;
     }
-    
+
     .btn-rechange,
     .btn-evaluation {
         float: right;
     }
-    
+
     .btn-rechange {
         margin-right: 1rem;
         padding-left: 0.9rem;
         background: url(imgs/icon-msg.png) no-repeat left;
         background-size: 0.725rem 0.6rem;
     }
-    
+
     .btn-evaluation {
         padding-left: 0.9rem;
         background: url(imgs/icon-write.png) no-repeat left;
         background-size: 0.65rem 0.65rem;
     }
-    .btn-detail{
-    	position: relative;
-    	z-index: 10;
-    	display: block;
-    	background:url(imgs/arrow.png) no-repeat 5rem;
-    	background-size:0.375rem 0.75rem;
-    }
-     .btn-detail:after{
 
-     }
+    .btn-detail {
+        position: relative;
+        z-index: 10;
+        display: block;
+        background: url(imgs/arrow.png) no-repeat 5rem;
+        background-size: 0.375rem 0.75rem;
+    }
+
+    .btn-detail:after {}
+    .mui-pull .mui-pull-caption-down{
+        padding:0.5rem 0;
+        height:1rem;
+        text-align: center;
+        font-size: 0.75rem;
+        font-family: "黑体";
+        line-height: 1rem;
+    }
+    .mui-pull .mui-pull-caption-refresh{
+        padding:0.5rem 0;
+        text-align: center;
+        font-size: 0.75rem;
+        font-family: "黑体";
+        line-height: 1rem;
+        height:1rem;
+    }
     </style>
 </head>
 
@@ -95,7 +111,71 @@
     </div>
     <!-- 历史爆料列表 -->
     <div class="bl-panel">
-        <ul>
+        <!-- 带上拉加载的列表结构页 -->
+        <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!--数据列表-->
+                <ul class="mui-table-view mui-table-view-chevron">
+                    <li>
+                        <a class="btn-detail" href="javascript:void(null)">
+                            <div class="bl-content">
+                                <h3 class="ell">爆料标题爆料标题爆料标题爆料标题爆料标爆料标题爆料标题爆料标题爆料标题爆料标</h3>
+                                <p><span>爆料日期：</span>2017.12.12</p>
+                                <p><span>爆料人：</span>阿里巴巴</p>
+                                <p class="f05">正在办理</p>
+                            </div>
+                        </a>
+                        <div class="bl-bar fix">
+                            <a href="javascript:void(null)" class="btn-evaluation">评价</a>
+                            <a href="javascript:void(null)" class="btn-rechange">重新修改</a>
+                        </div>
+                    </li>
+                     <li>
+                        <a class="btn-detail" href="javascript:void(null)">
+                            <div class="bl-content">
+                                <h3 class="ell">爆料标题爆料标题爆料标题爆料标题爆料标爆料标题爆料标题爆料标题爆料标题爆料标</h3>
+                                <p><span>爆料日期：</span>2017.12.12</p>
+                                <p><span>爆料人：</span>阿里巴巴</p>
+                                <p class="f05">正在办理</p>
+                            </div>
+                        </a>
+                        <div class="bl-bar fix">
+                            <a href="javascript:void(null)" class="btn-evaluation">评价</a>
+                            <a href="javascript:void(null)" class="btn-rechange">重新修改</a>
+                        </div>
+                    </li>
+                     <li>
+                        <a class="btn-detail" href="javascript:void(null)">
+                            <div class="bl-content">
+                                <h3 class="ell">爆料标题爆料标题爆料标题爆料标题爆料标爆料标题爆料标题爆料标题爆料标题爆料标</h3>
+                                <p><span>爆料日期：</span>2017.12.12</p>
+                                <p><span>爆料人：</span>阿里巴巴</p>
+                                <p class="f05">正在办理</p>
+                            </div>
+                        </a>
+                        <div class="bl-bar fix">
+                            <a href="javascript:void(null)" class="btn-evaluation">评价</a>
+                            <a href="javascript:void(null)" class="btn-rechange">重新修改</a>
+                        </div>
+                    </li>
+                     <li>
+                        <a class="btn-detail" href="javascript:void(null)">
+                            <div class="bl-content">
+                                <h3 class="ell">爆料标题爆料标题爆料标题爆料标题爆料标爆料标题爆料标题爆料标题爆料标题爆料标</h3>
+                                <p><span>爆料日期：</span>2017.12.12</p>
+                                <p><span>爆料人：</span>阿里巴巴</p>
+                                <p class="f05">正在办理</p>
+                            </div>
+                        </a>
+                        <div class="bl-bar fix">
+                            <a href="javascript:void(null)" class="btn-evaluation">评价</a>
+                            <a href="javascript:void(null)" class="btn-rechange">重新修改</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--  <ul>
             <li>
                 <a class="btn-detail" href="javascript:void(null)">
                     <div class="bl-content">
@@ -146,8 +226,34 @@
                     <a href="javascript:void(null)" class="btn-rechange">重新修改</a>
                 </div>
             </li>
-        </ul>
+        </ul> -->
     </div>
 </body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/mui.min.js"></script>
+<script>
+$(function() {
+    mui.init({
+        pullRefresh: {
+            container: "#refreshContainer", //下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
+            up: {
+                height: 50, //可选.默认50.触发上拉加载拖动距离
+                auto: true, //可选,默认false.自动上拉加载一次
+                contentrefresh: "正在加载...", //可选，正在加载状态时，上拉加载控件上显示的标题内容
+                contentnomore: '没有更多数据了', //可选，请求完毕若没有更多数据时显示的提醒内容；
+                callback: pullfresh //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
+            }
+        }
+    });
+
+    function pullfresh() {
+        setTimeout(function() {
+            console.log('...');
+            mui('#refreshContainer').pullRefresh().endPullupToRefresh(false);
+        }, 3000);
+
+    }
+}());
+</script>
 
 </html>
